@@ -2204,3 +2204,23 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/posts?utf8=%E2%9C%93&author=12&date=Today&commit=Filter" for 149.142.201.3 at 2019-06-05 22:15:24 +0000
+Cannot render console from 149.142.201.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/pmo55/model-class-methods-reading-v-000/app/controllers/posts_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+...   @posts = Post.where (author: params[:author])
+...                        ^~~~~~~
+/home/pmo55/model-class-methods-reading-v-000/app/controllers/posts_controller.rb:6: syntax error, unexpected ')', expecting end
+...where (author: params[:author])
+...                              ^):
+  
+app/controllers/posts_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/posts_controller.rb:6: syntax error, unexpected ')', expecting end
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.0ms)
